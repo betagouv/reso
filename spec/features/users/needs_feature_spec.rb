@@ -2,8 +2,8 @@
 
 require 'rails_helper'
 
-describe 'experts', type: :feature do
-  describe 'expert update' do
+describe 'needs', type: :feature do
+  describe 'need display' do
     let(:expert) { create :expert, users: [current_user] }
     let!(:match) { create :match, expert: expert }
     let(:need_subject) { match.need.subject.label }
